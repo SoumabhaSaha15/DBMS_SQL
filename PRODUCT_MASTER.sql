@@ -1,3 +1,4 @@
+drop table PRODUCT_MASTER;
 create  table PRODUCT_MASTER (
     PRODUCT_NO varchar2(6),
     DESCRIPTION varchar2(15),
@@ -8,6 +9,7 @@ create  table PRODUCT_MASTER (
     SELL_PRICE number(8,2),
     COST_PRICE number(8,2)
 );
+set linesize 50;
 desc PRODUCT_MASTER;
 insert into PRODUCT_MASTER values ('P00001','T-shirts',5,'Piece',200,50,350,250);
 insert into PRODUCT_MASTER values ('P0345','Shirts',6,'Piece',150,50,500,350);

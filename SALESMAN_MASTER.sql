@@ -1,4 +1,4 @@
-drop table if exists SALESMAN_MASTER;
+drop table SALESMAN_MASTER;
 create table SALESMAN_MASTER (
     SALESMAN_NO varchar2(6),
     SALESMAN_NAME varchar2(20),

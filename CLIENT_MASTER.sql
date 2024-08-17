@@ -1,3 +1,4 @@
+drop table CLIENT_MASTER;
 create table CLIENT_MASTER (
   CLIENTNO varchar2(6),
   NAME varchar2(20),
@@ -5,9 +6,11 @@ create table CLIENT_MASTER (
   ADDRESS2 varchar2(30),
   CITY varchar2(15),
   PINCODE number(8),
-  STATUS varchar2(15),
+  STATE varchar2(15),
   BALDUE number(10,2)
 );
+set linesize 50;
+desc CLIENT_MASTER;
 insert into CLIENT_MASTER values(
   'C00001',
   'Ivan Bayross',
@@ -68,8 +71,6 @@ insert into CLIENT_MASTER values(
   'Karnataka',
   0
 );
-commit;
-set linesize 100;
-desc CLIENT_MASTER;
 set linesize 400;
 select * from CLIENT_MASTER;
+commit;
