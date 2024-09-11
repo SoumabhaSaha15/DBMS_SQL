@@ -1,4 +1,4 @@
-drop table PRODUCT_MASTER;
+-- drop table PRODUCT_MASTER;
 create  table PRODUCT_MASTER (
     PRODUCT_NO varchar2(6),
     DESCRIPTION varchar2(15),
