@@ -1,1 +1,0 @@
-create user CSE1B_34 identified by soumabha;
