@@ -21,3 +21,15 @@ INSERT INTO CLIENT_MASTER values( 'C00006', 'Deepak Sharma', '4C Bannerghatta Ro
 SELECT  *
 FROM CLIENT_MASTER;
 COMMIT;
+
+CREATE TABLE CLIENT_MASTER (
+    CLIENTNO varchar2(6) PRIMARY KEY, 
+    NAME varchar2(20) NOT NULL, 
+    ADDRESS1 varchar2(30), 
+    ADDRESS2 varchar2(30), 
+    CITY varchar2(15), 
+    PINCODE number(8), 
+    STATES varchar2(15), 
+    BALDUE number(10, 2),
+    CHECK(CLIENTNO LIKE 'C%')
+);
