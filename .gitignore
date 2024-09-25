@@ -2,5 +2,6 @@ test
 *.txt
 .vscode
 exports
+sqlite
 */node_modules
 */db.sqlite3
