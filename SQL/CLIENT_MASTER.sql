@@ -10,6 +10,7 @@ CREATE TABLE CLIENT_MASTER (
     STATE varchar2(15), 
     BALDUE number(10, 2) 
 );
+
 DESC CLIENT_MASTER;
 INSERT INTO CLIENT_MASTER values( 'C00001', 'Ivan Bayross', '90 Chhatrapati Shivaji Road', 'Unit 6A LBS Marg', 'Mumbai', '400054', 'Maharashtra', 15000 );
 INSERT INTO CLIENT_MASTER values( 'C00002', 'Mamta Mazumder', 'Nungambakkam High Road 41', 'Apartment 5', 'Madras', '780001', 'Tamil Nadu', 0 );
@@ -18,8 +19,7 @@ INSERT INTO CLIENT_MASTER values( 'C00004', 'Ashwini Joshi', '3B Brigade Road', 
 INSERT INTO CLIENT_MASTER values( 'C00005', 'Hansel Colaco', '56 Wadala', 'Flat 5 CST Road', 'Mumbai', '400060', 'Maharashtra', 2000 );
 INSERT INTO CLIENT_MASTER values( 'C00006', 'Deepak Sharma', '4C Bannerghatta Road', 'Flat 1', 'Bangalore', '560050', 'Karnataka', 0 );
 
-SELECT  *
-FROM CLIENT_MASTER;
+SELECT  * FROM CLIENT_MASTER;
 COMMIT;
 
 CREATE TABLE CLIENT_MASTER (
@@ -33,3 +33,4 @@ CREATE TABLE CLIENT_MASTER (
     BALDUE number(10, 2),
     CHECK(CLIENTNO LIKE 'C%')
 );
+ALTER TABLE CLIENT_MASTER RENAME COLUMN STATES TO STATE;
